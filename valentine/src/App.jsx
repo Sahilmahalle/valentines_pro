@@ -1,22 +1,17 @@
 import React from "react";
-import "./Home.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Ask from "./Ask";
+import Home from "./Home";
 
 function App() {
   return (
-    <div className="container">
-      <div>
-        <img src="https://media.tenor.com/skrbv0aeoB0AAAAj/muddu.gif"></img>
-      </div>
-      <h1>Happy Valentine Day</h1>
-      <div id="container-button">
-        <div>
-          <button>Check Your Love Score</button>
-        </div>
-        <div>
-          <button>Will You Be My Valentine</button>
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route exact path="/ask" element={<Ask />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
