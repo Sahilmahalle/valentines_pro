@@ -1,3 +1,6 @@
+/* Home.css */
+
+/* Body styles */
 body {
   margin: 0;
   padding: 0;
@@ -5,34 +8,52 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f7d8e5;
+  background-color: #f7d8e5; /* Light pink background color */
 }
-#container-button {
+
+/* Container styles */
+.container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  width: 90%; /* Adjust width for medium-sized screens */
+  max-width: 600px; /* Set maximum width for small screens */
 }
 .container:hover {
   background-image: url("https://media.tenor.com/NRwD0WseIdMAAAAj/jump-love.gif");
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100vh;
-  height: auto; /* Adjust width for larger screens */
-  max-width: 600px; /* Set maximum width for small screens */
+/* Image styles */
+.container img {
+  width: 100%; /* Make the image fill its container */
+  border-radius: 10px; /* Rounded corners */
 }
 
+/* Title styles */
 h1 {
   font-size: 2rem;
-  color: #cc317c;
+  color: #cc317c; /* Pink title color */
   margin-bottom: 20px;
 }
 
+/* Button container styles */
+#container-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Button styles */
 button {
   padding: 15px 30px;
   font-size: 1rem;
@@ -40,28 +61,34 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #ff4d6e;
-  color: #ffffff;
+  background-color: #ff4d6e; /* Pink button background color */
+  color: #ffffff; /* White button text color */
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #d32f4a;
+  background-color: #d32f4a; /* Darker pink on hover */
 }
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
   .container {
-    width: 90%; /* Adjust width for medium-sized screens */
+    width: 95%; /* Adjust width for small screens */
   }
 }
 
 @media only screen and (max-width: 480px) {
   .container {
-    width: 95%; /* Adjust width for small screens */
+    width: 100%; /* Adjust width for extra small screens */
+    padding: 20px; /* Reduce padding for extra small screens */
   }
+
+  h1 {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
   button {
-    padding: 12px 24px;
-    font-size: 0.9rem;
+    padding: 12px 24px; /* Adjust button padding for smaller screens */
+    font-size: 0.9rem; /* Decrease font size for smaller screens */
   }
 }

@@ -4,6 +4,9 @@ import "./Home.css";
 function App() {
   return (
     <div className="container">
+      <div>
+        <img src="https://media.tenor.com/skrbv0aeoB0AAAAj/muddu.gif"></img>
+      </div>
       <h1>Happy Valentine Day</h1>
       <div id="container-button">
         <div>
