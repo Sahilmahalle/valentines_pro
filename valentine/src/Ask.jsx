@@ -41,18 +41,20 @@ function Ask() {
       </div>
       <h1>Will you be my valentine</h1>
       {yesClicked ? (
-        <p>Thank you for your response!</p>
+        <h2>Thank you for your response!</h2>
       ) : (
         <>
-          <button
-            className={`no-button ${noClicked ? "increase-size" : ""}`}
-            onClick={handleNoButtonClick}
-          >
-            {noButtonText}
-          </button>
-          <button className="yes-button" onClick={handleYesButtonClick}>
-            Yes
-          </button>
+          <div className="container-button">
+            <button
+              className={`no-button ${noClicked ? "increase-size" : ""}`}
+              onClick={handleNoButtonClick}
+            >
+              {noButtonText}
+            </button>
+            <button className="yes-button" onClick={handleYesButtonClick}>
+              Yes
+            </button>
+          </div>
         </>
       )}
     </div>

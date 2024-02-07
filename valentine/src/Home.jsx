@@ -11,7 +11,9 @@ function Home() {
       <h1>Happy Valentine Day</h1>
       <div id="container-button">
         <div>
-          <button>Check Your Love Score</button>
+          <Link to="/score">
+            <button>Check Your Love Score</button>
+          </Link>
         </div>
         <div>
           <Link to="/ask">

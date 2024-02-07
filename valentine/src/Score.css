@@ -1,0 +1,51 @@
+/* valentinesDayTheme.css */
+
+.Container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7eef7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #ff3e6c;
+  text-align: center;
+}
+
+h3 {
+  color: #ff3e6c;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #ff3e6c;
+  border-radius: 5px;
+  height: 20px;
+  width: 200px;
+}
+
+input::placeholder {
+  color: #ff3e6c;
+  opacity: 0.7;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff3e6c;
+  box-shadow: 0 0 5px rgba(255, 62, 108, 0.5);
+}
+
+#Text {
+  font-size: 3vw; /* Use percentage-based font size */
+  color: #870245;
+}
+
+#Text-score {
+  font-size: 2vw; /* Use percentage-based font size */
+  color: #870245;
+}

@@ -23,6 +23,13 @@ body {
   width: 70vw;
 }
 
+#container-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -69,6 +76,24 @@ button {
   }
 
   button {
+    padding: 5vw 7vw; /* Adjust button padding for smaller screens */
     font-size: 3vw;
+  }
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 400px) {
+  .container {
+    height: 90vh;
+    width: 90vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  button {
+    padding: 6vw 8vw; /* Further adjust button padding for smaller screens */
+    font-size: 4vw;
   }
 }
