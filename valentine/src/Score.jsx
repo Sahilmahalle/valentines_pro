@@ -86,16 +86,21 @@ function Score() {
             />
           </div>
           <button disabled={!yourName || !partnerName} onClick={handleSubmit}>
-            Submit
+            Check Love Score
           </button>
         </div>
       )}
       {submitClick && (
         <div>
-          <h2>Love Score</h2>
-          <p id="Text-score">{`Your Love Score is ${loveScore}`}</p>
-          {highText && <p id="Text">{highText}</p>}
-          {lowText && <p id="Text">{lowText}</p>}
+          <h2 className="finalQte">Love Score</h2>
+          <p
+            className="finalQte"
+            id="Text-score"
+          >{`Your Love Score is ${loveScore}`}</p>
+          <div className="finalQte">
+            {highText && <p id="Text">{highText}</p>}
+            {lowText && <p id="Text">{lowText}</p>}
+          </div>
         </div>
       )}
     </div>

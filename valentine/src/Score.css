@@ -28,6 +28,12 @@ input {
   height: 20px;
   width: 200px;
 }
+.finalQte {
+  background-color: white;
+}
+
+.finalQte:hover {
+}
 
 input::placeholder {
   color: #ff3e6c;
